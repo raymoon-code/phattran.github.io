@@ -7,11 +7,52 @@
 <html>
 	<head>
 		<!-- Floating Button -->
-<a href="#header" class="floating-btn">↑</a>
-		<a href="#personal-projects" class="floating-btn">personal-projects</a>
+<div class="floating-btn-container">
+    <a href="#header" class="floating-btn">↑</a>
+    <a href="#personal-projects" class="floating-btn">Projects</a>
+</div>
 		
 
 <!-- Add this to the style tag in your HTML -->
+<style>
+  /* Floating Button Container Style (to hold buttons vertically) */
+  .floating-btn-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the buttons */
+    z-index: 1000;
+  }
+
+  /* Floating Button Style */
+  .floating-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+
+  .floating-btn:hover {
+    background-color: #555;
+  }
+
+  /* Special style for the 'Projects' button to make it fit the text */
+  .floating-btn:nth-child(2) {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+</style>
+
+		
 <style>
   /* Floating Button Style */
   .floating-btn {
