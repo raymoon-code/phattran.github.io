@@ -1,4 +1,4 @@
-# Welcome to My Portfolio! 🌟
+<h1># Welcome to My Portfolio! 🌟</h1>
 Hi there! I'm Phat Tran, a passionate software developer with a Bachelor of Science in Computer Science and a Minor in Mathematics from the University of Houston. I’m excited to share my journey and projects with you!
 
 # 🚀 About Me
